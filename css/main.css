@@ -1,0 +1,395 @@
+/** Ultra Light */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 100;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 200;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 500;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 600;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 700;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+/*____ General Style */
+body {
+    font-family: "San Francisco", "Helvetica Neue", Arial, sans-serif;
+}
+
+/*____ Slider Main */
+.slider {
+    color: #fff;
+}
+.slide__text {
+    text-align: left;
+    margin-left: 60px;position: relative;
+    z-index: 10;
+}
+.slide__text h2 {
+    font-size: 60px;
+    font-weight: 900;
+}
+.slide__img img {
+    transition: all 0.3s cubic-bezier(.535,0,0,1);
+}
+.slider .j-dots {
+    position: relative;
+    bottom: 50px;
+    white-space: nowrap;
+    width: 90%;
+    min-width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider .owl-dots {
+    position: relative;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.slider .owl-dot {
+    font-size: 16px;
+    color: rgba(255,255,255,0.3);
+    width: 100px;
+    height: 20px;
+    /*margin: 10px;*/
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.slider .owl-dot.active {
+    color: rgba(255,255,255,1);
+}
+.owl-carousel .owl-item.active {
+    z-index: 10;
+}
+.all {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: scale(1.5);
+    text-align: center;
+    padding: 70px 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    transition: all 0.5s cubic-bezier(.535,0,0,1), opacity 0.5s cubic-bezier(.535,0,0,1) 0.3s;
+    opacity: 0;
+}
+.all.animate {
+    z-index: 3;
+    opacity: 1;
+    transform: scale(1);
+}
+.all a {
+    display: inline-block;
+    margin: 50px;
+    text-decoration: none;
+}
+.all img {
+    max-height: 320px;
+    vertical-align: top;
+    display: block;
+}
+.all span {
+    margin-top: 35px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    display: block;
+}
+.all__close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: scale(1.5);
+    text-align: center;
+    padding: 70px 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #242424;
+    color: #fff;
+
+    transition: all 0.5s cubic-bezier(.535,0,0,1), opacity 0.5s cubic-bezier(.535,0,0,1);
+    opacity: 0;
+}
+.menu.show {
+    z-index: 3;
+    opacity: 1;
+    transform: scale(1);
+}
+.menu__close {
+    position: absolute;
+    top: 55px;
+    right: 40px;
+}
+.menu__list {
+    list-style-type: none;
+    text-align: right;
+}
+.menu__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+}
+/*____/Slider Main */
+
+/*____ Modal */
+.modal {
+    width: 480px;
+    padding: 60px 80px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 0 200px 0 #00000019;
+}
+/*____/Modal */
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #efeff3;
+    /*background: linear-gradient(90deg, #cbb69a, #e8d5c1 21%, #c9b59a);*/
+    /*транзишн в градиенте не судьба :( */
+    transition: all 0.3s cubic-bezier(.535,0,0,1);
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 24%, rgba(0,0,0,0.2) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 24%,rgba(0,0,0,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 24%,rgba(0,0,0,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+header {
+    position: fixed;
+    z-index: 5;
+}
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 1;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(.535,0,0,1);
+    box-sizing: border-box;
+}
+.page.animate {
+    transform: scale(0.6);
+    opacity: 0;
+}
+.page img {
+    max-height: 640px;
+    vertical-align: top;
+}
+.slide__text, .slide__img {
+    display: inline-block;
+    vertical-align: top;
+}
+.slider {
+    height: 100vh;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.slider__nav {
+    position: absolute;
+}
+.slider__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 100vw;
+    height: 100vh;
+    padding: 150px 250px;
+    box-sizing: border-box;
+}
+.j-open-product, .j-open-product img {
+    position: relative;
+    transition: all 0.8s cubic-bezier(.535,0,0,1);
+}
+
+
+
+@keyframes a-top {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.a-top {
+    position: relative;
+    transform: translateY(30px);
+    opacity: 0;
+}
+.a-top._animate {
+    animation-name: a-top;
+    animation-fill-mode: both;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+.a-top--1._animate {
+    animation-delay: 0s;
+}
+.a-top--2._animate {
+    animation-delay: 0.1s;
+}
+.a-top--3._animate {
+    animation-delay: 0.2s;
+}
+.a-top--4._animate {
+    animation-delay: 0.3s;
+}
+.a-top--5._animate {
+    animation-delay: 0.4s;
+}
+
+@keyframes a-rotate-left {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+@keyframes a-rotate-right {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+.slide__img._animate-left {
+    animation-name: a-rotate-left;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+.slide__img._animate-right {
+    animation-name: a-rotate-right;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+
+
+/* Animation for main carousel */
+
+@keyframes myAnimation {
+    from {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+}
+.myAnimation {
+    animation-name: myAnimation;
+    animation-fill-mode: both;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+@keyframes myAnimation2 {
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.myAnimation2 {
+    animation-name: myAnimation2;
+    animation-fill-mode: both;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+
+@keyframes myAnimation3 {
+    from {
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+.myAnimation3 {
+    animation-name: myAnimation3;
+    animation-fill-mode: both;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+
+
+

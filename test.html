@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>remarket</title>
+    <link rel='stylesheet' href='css/main-b.css'/>
+</head>
+<body id="page">
+<header class="header">
+    <a href="/" class="header__logo">Remarket</a>
+    <div class="header__buttons">
+        <button class="header__menu j-menu-btn">Меню</button>
+    </div>
+</header>
+
+<div class="page j-current">
+    <div class="j-page" id="pay" style="display: none;">Оплата и доставка</div>
+    <div class="j-page" id="faq" style="display: none;">Вопрос-ответ</div>
+    <div class="j-page" id="ref" style="display: none;">Что такое REF</div>
+    <div class="j-page" id="contacts" style="display: none;">контакты</div>
+    <div class="j-page" id="dilers" style="display: none;">Дилерам</div>
+</div>
+
+<div class="menu j-menu">
+    <ul class="menu__list">
+        <li class="menu__item" data-to="pay">Оплата и доставка</li>
+        <li class="menu__item" data-to="faq">Вопрос-ответ</li>
+        <li class="menu__item" data-to="dilers">Дилерам</li>
+        <li class="menu__item" data-to="ref">Что такое REF</li>
+        <li class="menu__item" data-to="contacts">Контакты</li>
+    </ul>
+
+    <button class="menu__close j-menu-btn-close">Закрыть</button>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/libs/handlebars.js"></script>
+<script src="js/libs/owl.carousel.min.js"></script>
+<script src="js/libs/jquery.arcticmodal-0.3.min.js"></script>
+<script src="js/libs/underscore.js"></script>
+<script src="js/libs/backbone.js"></script>
+<script src="js/demodata.js"></script>
+<script src="js/test.js"></script>
+</body>
+</html>

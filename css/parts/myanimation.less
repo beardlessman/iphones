@@ -1,0 +1,122 @@
+@keyframes a-top {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.a-top {
+  position: relative;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.a-top._animate {
+  animation-name: a-top;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+.a-top--1._animate {
+  animation-delay: 0s;
+}
+.a-top--2._animate {
+  animation-delay: 0.1s;
+}
+.a-top--3._animate {
+  animation-delay: 0.2s;
+}
+.a-top--4._animate {
+  animation-delay: 0.3s;
+}
+.a-top--5._animate {
+  animation-delay: 0.4s;
+}
+@keyframes a-rotate-left {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes a-rotate-right {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.slide__img._animate-left {
+  animation-name: a-rotate-left;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+.slide__img._animate-right {
+  animation-name: a-rotate-right;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+@keyframes myAnimation {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+}
+.myAnimation {
+  animation-name: myAnimation;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+@keyframes myAnimation2 {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.myAnimation2 {
+  animation-name: myAnimation2;
+  animation-fill-mode: both;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+
+@keyframes myAnimation3 {
+  from {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+.myAnimation3 {
+  animation-name: myAnimation3;
+  animation-fill-mode: both;
+  animation-duration: 6s;
+  animation-timing-function: cubic-bezier(.215,.61,.355,1);
+}

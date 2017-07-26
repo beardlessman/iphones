@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>remarket</title>
+    <link rel='stylesheet' href='css/main-b.css'/>
+</head>
+<body id="page">
+<!--<div id="loader"></div>-->
+<header class="header">
+    <a href="/" class="header__logo">Remarket</a>
+    <div class="header__buttons">
+        <button class="header__menu j-menu-btn">Меню</button>
+        <button class="header__all j-all-btn" style="display: none">Все модели</button>
+    </div>
+</header>
+
+<div class="page j-current">
+    <div class="slider owl-carousel j-carousel j-page" id="catalog" style="display: none;"></div>
+    <div class="j-page" id="pay" style="display: none;">Оплата и доставка</div>
+    <div class="j-page" id="faq" style="display: none;">Вопрос-ответ</div>
+    <div class="j-page" id="ref" style="display: none;">Что такое REF</div>
+    <div class="j-page" id="contacts" style="display: none;">контакты</div>
+    <div class="j-page" id="dilers" style="display: none;">Дилерам</div>
+</div>
+ 
+<div class="menu j-menu" style="display: none">
+    <ul class="menu__list">
+        <li class="menu__item menu__link" data-to="catalog">Каталог</li>
+        <li class="menu__item menu__link" data-to="pay">Оплата и доставка</li>
+        <li class="menu__item menu__link" data-to="faq">Вопрос-ответ</li>
+        <li class="menu__item menu__link" data-to="dilers">Дилерам</li>
+        <li class="menu__item menu__link" data-to="ref">Что такое REF</li>
+        <li class="menu__item menu__link" data-to="contacts">Контакты</li>
+    </ul>
+
+    <button class="menu__close j-menu-btn-close">Закрыть</button>
+</div>
+
+<div class="all j-list"  style="display: none">
+    <button class="all__close j-all-btn-close">Закрыть</button>
+</div>
+
+<!--модалка покупки-->
+<div style="display: none;">
+    <div class="modal" id="buyModal"></div>
+</div>
+<!--templates-->
+<script id="phoneTemplate" type="x-handlebars-template">
+    <div class="slider__item slide" data-hash="{{hash}}" data-color="{{color}}">
+        {{#each colors}}
+            {{#if isDefault}}
+            <div class="slide__img">
+                <img src="{{img}}">
+            </div>
+            {{/if}}
+        {{/each}}
+        <div class="slide__text">
+            <h2 class="slide__title a-top a-top--1 j-title">{{name}}</h2>
+            <ul class="slide__chars a-top a-top--2">
+                <li>
+                    <span>{{chars.screen}}”</span>
+                    <span>Дисплей</span>
+                </li>
+                <li>
+                    <span>{{chars.proc}}</span>
+                    <span>Процессор</span>
+                </li>
+                <li>
+                    <span>{{chars.camera}}</span>
+                    <span>Камера</span>
+                </li>
+                <li>
+                    <button>...</button>
+                    <span>Все характеристики</span>
+                </li>
+            </ul>
+            <div class="slide__ctrls a-top a-top--3">
+                {{#each colors}}
+                <div class="slide__colors j-color">
+                    {{#if isDefault}}
+                        <button class="j-color__var active" data-val="{{val}}" data-img="{{img}}">{{name}}</button>
+                    {{else}}
+                        <button class="j-color__var" data-val="{{val}}" data-img="{{img}}">{{name}}</button>
+                    {{/if}}
+                </div>
+                {{/each}}
+
+
+                {{#each mems}}
+                    <div class="slide__mem">
+                        {{#if isDefault}}
+                            <button class="j-mem__var active" data-val="{{val}}">{{val}} Гб</button>
+                        {{else}}
+                            <button class="j-mem__var" data-val="{{val}}">{{val}} Гб</button>
+                        {{/if}}
+                    </div>
+                {{/each}}
+            </div>
+            <div class="slide__buy a-top a-top--4">
+                <button class="j-buy-btn kek">
+                    Купить {{name}}
+                </button>
+                {{#each mems}}
+                    {{#if isDefault}}
+                    <p><span class="j-price">{{price}}</span> P</p>
+                    {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</script>
+<script id="phoneTemplateList" type="x-handlebars-template">
+    <a href="#{{hash}}" class="j-open-product">
+        <img src="images/iphone2.jpg">
+        <span>{{name}}</span>
+    </a>
+</script>
+<script id="modal-buy" type="x-handlebars-template">
+    <h3 style="color:
+        {{#each colors}}
+            {{#if isDefault}}
+                {{val}}
+            {{/if}}
+        {{/each}}">
+        {{name}}
+    </h3>
+    <p>
+        {{#each colors}}
+            {{#if isDefault}}
+                {{name}}
+            {{/if}}
+        {{/each}}
+        ,
+        {{#each mems}}
+            {{#if isDefault}}
+                {{val}}
+            {{/if}}
+        {{/each}}
+        Гб</p>
+    <form>
+        <button
+                style="background:
+                {{#each colors}}
+                    {{#if isDefault}}
+                        {{val}}
+                    {{/if}}
+                {{/each}}">
+            Оплатить онлайн
+            {{#each mems}}
+                {{#if isDefault}}
+                    {{price}}
+                {{/if}}
+            {{/each}}
+            руб.
+        </button>
+    </form>
+</script>
+
+<script src="js/jquery.js"></script>
+<script src="js/libs/handlebars.js"></script>
+<script src="js/libs/owl.carousel.min.js"></script>
+<script src="js/libs/jquery.arcticmodal-0.3.min.js"></script>
+<script src="js/libs/underscore.js"></script>
+<script src="js/libs/backbone.js"></script>
+<script src="js/demodata.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

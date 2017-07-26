@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+}
+.header__buttons {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+.header__logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlYWRlci5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQUE7O0FBQ0EsT0FBQztFQUNDLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLFdBQUE7O0FBRUYsT0FBQztFQUNDLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLFVBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAmX19idXR0b25zIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiA0MHB4O1xuICAgIHJpZ2h0OiA1MHB4O1xuICB9XG4gICZfX2xvZ28ge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDQwcHg7XG4gICAgbGVmdDogNDBweDtcbiAgfVxufSJdfQ== */
