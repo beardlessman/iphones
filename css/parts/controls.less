@@ -8,6 +8,14 @@ button, input, optgroup, select, textarea {
   border: none;
   outline: none;
   cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.25);
+  }
+  &:active {
+    transform: translateY(2px) translateX(2px);
+  }
 
   &--icon {
     padding: 10px;
@@ -18,13 +26,28 @@ button, input, optgroup, select, textarea {
     font-weight: 200;
     line-height: 1;
     i {
+      transition: all 0.2s ease;
+    }
+    &:hover {
+      box-shadow: none;
+    }
+    &:active {
+      transform: translateY(0px) translateX(px);
+      i {
+        transform: scale(0.9);
+      }
+    }
+    svg {
       display: inline-block;
       vertical-align: middle;
+      transition: all 0.2s ease;
     }
     span {
       display: inline-block;
       vertical-align: middle;
       margin-left: 5px;
+      line-height: 16px;
+      margin-top: 5px;
     }
   }
   &--mem {
@@ -32,19 +55,45 @@ button, input, optgroup, select, textarea {
     border: 1px solid rgba(255,255,255,0);
     background-color: rgba(0,0,0,0);
     color: #fff;
+    &:hover {
+      border: 1px solid rgba(255,255,255,0.5);
+      box-shadow: none;
+    }
+    &:active {
+      transform: translateY(0px) translateX(px);
+    }
 
     &.active {
       border: 1px solid rgba(255,255,255,1);
     }
   }
   &--color {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    margin-right: -15px;
+    vertical-align: middle;
     padding: 0px;
-    width: 45px;
-    height: 45px;
     border: 1px solid rgba(255,255,255,0);
     background-color: rgba(0,0,0,0);
     color: #fff;
     font-size: 0;
+    &:hover {
+      z-index: 2;
+      border: 1px solid rgba(255,255,255,0.5);
+      box-shadow: none;
+    }
+    &:active {
+      transform: translateY(0px) translateX(px);
+    }
+    &.active {
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      left: 0;
+      top: -4px;
+      border: 1px solid #fff;
+    }
   }
 }
 .ctrl {

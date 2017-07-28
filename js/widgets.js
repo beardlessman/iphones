@@ -99,6 +99,42 @@ function hFormatPrice(_number) {
         return '';
     }
 };
+function aHoverSvg() {
+    var speed = 200,
+        easing = mina.easeinout;
+
+    [].slice.call ( document.querySelectorAll( '.j-svg-hover-menu' ) ).forEach( function( el ) {
+        var s = Snap( el.querySelector( 'svg' ) ),
+            line1 = s.select( '.j-svg-hover__el1' ),
+        	lineConfig1 = {
+        		from : line1.attr( 'x2' ),
+        		to : line1.node.dataset.hover
+        	},
+            line2 = s.select( '.j-svg-hover__el2' ),
+            lineConfig2 = {
+                from : line2.attr( 'x2' ),
+                to : line2.node.dataset.hover
+            },
+            line3 = s.select( '.j-svg-hover__el3' ),
+            lineConfig3 = {
+                from : line3.attr( 'x2' ),
+                to : line3.node.dataset.hover
+            };
+
+        el.addEventListener( 'mouseenter', function() {
+            console.log('hover');
+            line1.animate( { 'x2' : lineConfig1.to }, speed, easing );
+            line2.animate( { 'x2' : lineConfig2.to }, speed, easing );
+            line3.animate( { 'x2' : lineConfig3.to }, speed, easing );
+        } );
+
+        el.addEventListener( 'mouseleave', function() {
+            line1.animate( { 'x2' : lineConfig1.from }, speed, easing );
+            line2.animate( { 'x2' : lineConfig2.from }, speed, easing );
+            line3.animate( { 'x2' : lineConfig3.from }, speed, easing );
+        } );
+    } );
+};
 
 function WSexyInput(input) {
     this.input = $(input);

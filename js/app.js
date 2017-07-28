@@ -32,7 +32,7 @@ var PageView = Backbone.View.extend({
     el: $("#page"),
 
     events: {
-        "click .menu__item": "changeState",
+        "click .menu__link": "changeState",
         "click .j-menu-btn": "openMenu",
         "click .j-menu-btn-close": "closeMenu"
     },
@@ -102,6 +102,10 @@ var PageView = Backbone.View.extend({
             $('body').removeClass('main');
             $('.j-all-btn').hide();
         }
+
+        aHoverSvg();
+
+
         return this;
     },
 
@@ -139,7 +143,7 @@ var PageView = Backbone.View.extend({
     },
 
     changeState: function (e) {
-        var toPage = $(e.target).closest('.menu__item').data('to');
+        var toPage = $(e.target).closest('.menu__link').data('to');
         appState.set({ state: toPage });
 
         this.closeMenu();
@@ -272,12 +276,16 @@ var PhoneView = Backbone.View.extend({
     },
 
     hidePhoneA: function () {
-        $('.j-phoneA').css({'opacity': '0', 'transform': 'translateY(-100px)'});
+        $('.j-phoneA').each(function () {
+          $(this).css({'opacity': '0'});
+        });
     },
 
     showPhoneA: function () {
         setTimeout(function () {
-            $('.j-phoneA').css({'opacity': '1', 'transform': 'translateY(0px)'});
+            $('.j-phoneA').each(function () {
+                $(this).css({'opacity': '1'});
+            });
         }, 300);
     },
 
@@ -311,10 +319,6 @@ var CatalogView = Backbone.View.extend({
         }, this);
 
         that.initCarousel();
-        // $('.j-price').each(function () {
-        //     var newPrice = hFormatPrice($(this).text());
-        //     $(this).text(newPrice);
-        // });
     },
 
     renderPhone: function (item) {

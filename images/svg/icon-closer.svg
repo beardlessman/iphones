@@ -1,7 +1,13 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="20px" height="20px">
-<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
- d="M19.899,18.485 L18.485,19.899 L10.000,11.414 L1.515,19.899 L0.100,18.485 L8.586,10.000 L0.100,1.515 L1.515,0.100 L10.000,8.585 L18.485,0.100 L19.899,1.515 L11.414,10.000 L19.899,18.485 Z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#308C42;}
+	.st1{fill:#BC2B2B;stroke:#CF167B;stroke-width:2.8346;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M17.3-7.8l-1.4,1.4l-8.5-8.5l-8.5,8.5l-1.4-1.4L6-16.3l-8.5-8.5l1.4-1.4l8.5,8.5l8.5-8.5l1.4,1.4l-8.5,8.5
+	L17.3-7.8z"/>
+<line class="st1" x1="1.1" y1="1.1" x2="18.9" y2="18.9"/>
+<line class="st1" x1="18.9" y1="1.1" x2="1.1" y2="18.9"/>
 </svg>

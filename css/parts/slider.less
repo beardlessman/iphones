@@ -2,12 +2,57 @@
   color: #fff;
 }
 .slide__text {
+  display: inline-block;
+  vertical-align: top;
   text-align: left;
   margin-left: 60px;position: relative;
   z-index: 10;
+  transition: all 1s ease;
+}
+.slide {
+  &__title {
+    transform: translateY(50px) translateX(10px);
+    opacity: 0;
+    transition: all 0.8s ease;
+  }
+  &__chars {
+    transform: translateY(50px) translateX(10px);
+    opacity: 0;
+    transition: all 0.8s ease 0.2s;
+  }
+  &__ctrls {
+    transform: translateY(50px) translateX(10px);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+  }
+  &__buy {
+    transform: translateY(50px) translateX(10px);
+    opacity: 0;
+    transition: all 0.8s ease 0.6s;
+  }
+}
+.owl-item.active {
+  .slide {
+    &__title {
+      transform: translateY(0px) translateX(0px);
+      opacity: 1;
+    }
+    &__chars {
+      transform: translateY(0px) translateX(0px);
+      opacity: 1;
+    }
+    &__ctrls {
+      transform: translateY(0px) translateX(0px);
+      opacity: 1;
+    }
+    &__buy {
+      transform: translateY(0px) translateX(0px);
+      opacity: 1;
+    }
+  }
 }
 .slide__img {
-  min-width: 350px;
+  min-width: 380px;
   position: relative;
   &:after {
     display: block;
@@ -24,6 +69,9 @@
 }
 .slide__img img {
   animation: levitation 4s infinite ease-in-out;
+  & + img {
+    animation: levitation 4.5s infinite ease-in-out;
+  }
 }
 @keyframes levitation {
   from {transform: translateY(-5px);}
@@ -58,8 +106,13 @@
   min-height: 630px;
   width: auto!important;
   opacity: 0;
-  transform: translateY(100px);
   margin: 0 auto;
+  display: inline-block!important;
+  position: relative;
+  & + img {
+    left: -60%;
+    z-index: 2;
+  }
 }
 .slider .j-dots {
   position: relative;
@@ -86,10 +139,13 @@
 .slider .owl-dot.active {
   color: rgba(255,255,255,1);
 }
+.slider .owl-dot:hover {
+  color: rgba(255,255,255,1);
+}
 .owl-carousel .owl-item.active {
   z-index: 10;
 }
-.slide__text, .slide__img {
+.slide__img {
   display: inline-block;
   vertical-align: top;
   transition: all 0.3s cubic-bezier(.535,0,0,1);
@@ -154,24 +210,6 @@
     margin-bottom: 40px;
     padding-left: 50px;
     position: relative;
-    button {
-      width: 35px;
-      height: 35px;
-      position: relative;
-      margin-right: -15px;
-      vertical-align: middle;
-      &:hover {
-        z-index: 2;
-      }
-      &.active {
-        width: 45px;
-        height: 45px;
-        position: absolute;
-        left: 0;
-        top: -4px;
-        border: 1px solid #fff;
-      }
-    }
   }
   &__mem {
     display: inline-block;
