@@ -113,6 +113,7 @@ BuyModal.prototype.changeColor = function (color) {
   color.closest('.j-slide').attr('data-color', newColor);
   changeItem.css({opacity: "0"});
   $('body').css({background: newColor});
+  $(color).closest('.j-slide').find('.j-buy-btn').css({color: newColor});
   setTimeout(function () {
       changeItem.attr('src', img);
   }, 300);

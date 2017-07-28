@@ -47,19 +47,24 @@ var PageView = Backbone.View.extend({
     initList: function () {
         $('.j-all-btn').on('click', function () {
             $('.j-current').addClass('animate');
+            $('.j-all-btn').hide();
+            $('.j-menu-btn').hide();
             setTimeout(function () {
                 $('.j-list').addClass('animate');
             }, 200);
         });
 
         $('.j-open-product').on('click', function (e) {
-            // $('.j-list').css({zIndex: '1', opacity: "0"});
             $('.j-list').removeClass('animate');
             $('.j-open-product').css({opacity: '0'});
 
             setTimeout(function () {
                 $('.j-current').removeClass('animate');
             }, 100);
+            setTimeout(function () {
+                $('.j-all-btn').show();
+                $('.j-menu-btn').show();
+            }, 400);
             setTimeout(function () {
                 $('.j-list').removeAttr('style');
                 $('.j-open-product').removeAttr('style');
@@ -73,6 +78,10 @@ var PageView = Backbone.View.extend({
             setTimeout(function () {
                 $('.j-current').removeClass('animate');
             }, 100);
+            setTimeout(function () {
+                $('.j-all-btn').show();
+                $('.j-menu-btn').show();
+            }, 400);
             setTimeout(function () {
                 $('.j-list').removeClass('animate');
                 $('.j-list').removeAttr('style');
@@ -88,25 +97,49 @@ var PageView = Backbone.View.extend({
         if (state === 'catalog') {
             $('.j-all-btn').show();
             $('.j-list').show();
+            $('body').addClass('main');
+        } else {
+            $('body').removeClass('main');
+            $('.j-all-btn').hide();
         }
-        $('.j-menu').show();
         return this;
     },
 
     openMenu: function () {
         $('.j-all-btn').hide();
         $('.j-menu-btn').hide();
-        $('.j-menu').addClass('show');
+        this.showMenu();
     },
 
     closeMenu: function () {
         $('.j-menu-btn').show();
-        $('.j-menu').removeClass('show');
+        if ($('body').hasClass('main')) {
+            $('.j-all-btn').show();
+        }
+        this.hideMenu();
+    },
+
+    showMenu: function () {
+        $('.j-menu').css({
+            'opacity': '1',
+            'z-index': '3',
+            'transform': 'scale(1)'
+        });
+    },
+    hideMenu: function () {
+        $('.j-menu').css({
+            'opacity': '0',
+            'transform': 'scale(1.5)'
+        });
+        setTimeout(function () {
+            $('.j-menu').css({
+                'z-index': '1'
+            });
+        }, 400);
     },
 
     changeState: function (e) {
         var toPage = $(e.target).closest('.menu__item').data('to');
-
         appState.set({ state: toPage });
 
         this.closeMenu();
@@ -126,8 +159,15 @@ var PhoneView = Backbone.View.extend({
     },
 
     render: function () {
+
+        console.log('render phone');
+
         var tmpl = Handlebars.compile(this.template);
         $(this.el).html(tmpl(this.model.toJSON()));
+
+        this.showPhoneA();
+        this.changeBodyColorA();
+        this.formatPrice(this.el);
 
         return this;
     },
@@ -141,42 +181,63 @@ var PhoneView = Backbone.View.extend({
 
     changeMemory: function (e) {
         e.preventDefault();
+        if ($(e.target).hasClass('active')){
+            console.log('шо то хуйня то это хуйня');
+        } else {
+            var cmp = this;
 
-        var newMem = $(e.target).data('val'),
-            prevData = this.model.previousAttributes(),
-            max = prevData.mems.length;
+            cmp.hidePhoneA();
 
-        for (var i = 0; i < max; i++) {
-            if (prevData.mems[i].isDefault) {
-                prevData.mems[i].isDefault = false;
+            var el = $(e.target),
+                slide = el.closest('.j-slide')[0],
+                newMem = el.data('val'),
+                prevData = this.model.previousAttributes(),
+                max = prevData.mems.length;
+
+            for (var i = 0; i < max; i++) {
+                if (prevData.mems[i].isDefault) {
+                    prevData.mems[i].isDefault = false;
+                }
+
+                if (prevData.mems[i].val == newMem) {
+                    prevData.mems[i].isDefault = true;
+                }
             }
 
-            if (prevData.mems[i].val == newMem) {
-                prevData.mems[i].isDefault = true;
-            }
+            setTimeout(function () {
+                cmp.render();
+            }, 300);
         }
-
-        this.render();
     },
 
     changeColor: function (e) {
         e.preventDefault();
+        if ($(e.target).hasClass('active')){
+            console.log('шо то хуйня то это хуйня');
+        } else {
+            var cmp = this;
 
-        var newColor = $(e.target).data('val'),
-            prevData = this.model.previousAttributes(),
-            max = prevData.colors.length;
+            cmp.hidePhoneA();
 
-        for (var i = 0; i < max; i++) {
-            if (prevData.colors[i].isDefault) {
-                prevData.colors[i].isDefault = false;
+            console.log('change color');
+            var el = $(e.target),
+                slide = el.closest('.j-slide')[0],
+                newColor = el.data('val'),
+                prevData = this.model.previousAttributes(),
+                max = prevData.colors.length;
+            for (var i = 0; i < max; i++) {
+                if (prevData.colors[i].isDefault) {
+                    prevData.colors[i].isDefault = false;
+                }
+
+                if (prevData.colors[i].val == newColor) {
+                    prevData.colors[i].isDefault = true;
+                }
             }
-
-            if (prevData.colors[i].val == newColor) {
-                prevData.colors[i].isDefault = true;
-            }
+            setTimeout(function () {
+                cmp.render();
+            }, 300);
         }
-
-        this.render();
     },
 
     openBuyModal: function () {
@@ -187,6 +248,47 @@ var PhoneView = Backbone.View.extend({
         $('#buyModal').empty().html(template(data));
 
         $('#buyModal').arcticmodal();
+
+        $('.j-form__input').each(function () {
+            console.log('find input');
+            new WSexyInput(this);
+        });
+    },
+
+    changeBodyColorA: function () {
+        var colors = this.model.attributes.colors,
+            color,
+            colorName;
+
+        for (var i = 0; i < colors.length; i++) {
+            if (colors[i].isDefault) {
+                color = colors[i].val;
+                colorName = colors[i].name;
+            }
+        }
+
+        console.log('time to change body color to ' + colorName);
+        $('body').css({'background-color': color});
+    },
+
+    hidePhoneA: function () {
+        $('.j-phoneA').css({'opacity': '0', 'transform': 'translateY(-100px)'});
+    },
+
+    showPhoneA: function () {
+        setTimeout(function () {
+            $('.j-phoneA').css({'opacity': '1', 'transform': 'translateY(0px)'});
+        }, 300);
+    },
+
+    formatPrice: function (el) {
+        console.log(el);
+        $(el).find('.j-price').each(function () {
+            console.log($(this).text());
+            var newPrice = hFormatPrice($(this).text());
+            console.log(newPrice);
+            $(this).text(newPrice);
+        });
     }
 });
 
@@ -209,6 +311,10 @@ var CatalogView = Backbone.View.extend({
         }, this);
 
         that.initCarousel();
+        // $('.j-price').each(function () {
+        //     var newPrice = hFormatPrice($(this).text());
+        //     $(this).text(newPrice);
+        // });
     },
 
     renderPhone: function (item) {
@@ -230,26 +336,7 @@ var CatalogView = Backbone.View.extend({
     },
 
     initCarousel: function () {
-        var owl = $('.j-carousel');
-        owl.owlCarousel({
-            items:1,
-            center:true,
-            margin:10,
-            URLhashListener:true,
-            startPosition: 'URLHash',
-            mouseDrag: true
-        });
-
-        // dot = название товара
-        $(".owl-dots").wrap("<div class='j-dots'></div>");
-        var array = [];
-        owl.find('.j-slide').each(function () {
-            array.push($(this).find('.j-title').text());
-        });
-        var max = owl.find('.owl-dot').length;
-        for(var i = 0; i < max; i++ ) {
-            owl.find('.owl-dot:nth-child(' + (i+1) + ') span').text(array[i]);
-        }
+        wInitCarousel();
     }
 });
 

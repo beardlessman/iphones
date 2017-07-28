@@ -73,7 +73,6 @@ $(function() {
     for(var i = 0; i < max; i++ ) {
         owl.find('.owl-dot:nth-child(' + (i+1) + ') span').text(array[i]);
     }
-
     // Listen to owl events:
     owl.on('translate.owl.carousel', function(event) {
         $('.owl-item:not(.active) .a-top').removeClass('_animate');

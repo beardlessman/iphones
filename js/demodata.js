@@ -4,6 +4,7 @@ var phones = [
         name: "iPhone 5s",
         hash: "iPhone5s",
         img: "images/iphone.jpg",
+        isRef: true,
         color: "#e8d5c1", //default bg color
         chars: {
             screen: "4,7",
@@ -53,6 +54,7 @@ var phones = [
         name: "iPhone 6",
         hash: "iPhone6",
         img: "images/iphone2.jpg",
+        isRef: true,
         color: "#e8d5c1", //default bg color
         chars: {
             screen: "4,7",
@@ -102,6 +104,7 @@ var phones = [
         name: "iPhone 6s",
         hash: "iPhone6s",
         img: "images/iphone3.jpg",
+        isRef: true,
         color: "#e8d5c1", //default bg color
         chars: {
             screen: "4,7",
@@ -151,6 +154,7 @@ var phones = [
         name: "iPhone 6s+",
         hash: "iPhone6s+",
         img: "images/iphone4.jpg",
+        isRef: true,
         color: "#e8d5c1", //default bg color
         chars: {
             screen: "4,7",
@@ -200,6 +204,7 @@ var phones = [
         name: "iPhone 6+",
         hash: "iPhone6+",
         img: "images/iphone5.jpg",
+        isRef: true,
         color: "#e8d5c1", //default bg color
         chars: {
             screen: "4,7",
@@ -249,6 +254,7 @@ var phones = [
         name: "iPhone 7",
         hash: "iPhone7",
         img: "images/iphone.jpg",
+        isRef: true,
         color: "#e8d5c1", //default bg color
         chars: {
             screen: "4,7",
@@ -298,6 +304,7 @@ var phones = [
         name: "iPhone SE",
         hash: "iPhoneSE",
         img: "images/iphone2.jpg",
+        isRef: true,
         color: "#e8d5c1", //default bg color
         chars: {
             screen: "4,7",
