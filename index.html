@@ -183,7 +183,7 @@
         {{#each colors}}
             {{#if isDefault}}
             <div class="slide__img j-scene">
-                <img src="{{img}}" class="j-phoneA layer prlx-bg" data-depth="0.2">
+                <!--<img src="{{img}}" class="j-phoneA layer prlx-bg" data-depth="0.2">-->
                 <img src="{{img}}" class="j-phoneA layer prlx-bg" data-depth="1">
             </div>
             {{/if}}
@@ -245,7 +245,7 @@
 </script>
 <script id="phoneTemplateList" type="x-handlebars-template">
     <a href="#{{hash}}" class="j-open-product">
-        <img src="images/iphone2.jpg">
+        <img src="{{img}}">
         <span>{{name}}</span>
     </a>
 </script>

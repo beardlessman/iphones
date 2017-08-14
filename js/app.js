@@ -55,12 +55,13 @@ var PageView = Backbone.View.extend({
         });
 
         $('.j-open-product').on('click', function (e) {
-            $('.j-list').removeClass('animate');
-            $('.j-open-product').css({opacity: '0'});
-
             setTimeout(function () {
                 $('.j-current').removeClass('animate');
             }, 100);
+            setTimeout(function () {
+                $('.j-open-product').css({opacity: '0'});
+                $('.j-list').removeClass('animate');
+            }, 200);
             setTimeout(function () {
                 $('.j-all-btn').show();
                 $('.j-menu-btn').show();

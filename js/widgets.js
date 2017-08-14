@@ -73,7 +73,6 @@ function wInitCarousel() {
         //
         // dotsLeftPosition();
         // $('.owl-item').css({'opacity':'0'});
-
     });
     owl.on('mousewheel', '.owl-stage', f100);
 };
