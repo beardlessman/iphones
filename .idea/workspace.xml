@@ -6,18 +6,24 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main-b.css" afterPath="$PROJECT_DIR$/css/main-b.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/all.css" afterPath="$PROJECT_DIR$/css/parts/all.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/all.less" afterPath="$PROJECT_DIR$/css/parts/all.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/animate.css" afterPath="$PROJECT_DIR$/css/parts/animate.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/animate.less" afterPath="$PROJECT_DIR$/css/parts/animate.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/controls.less" afterPath="$PROJECT_DIR$/css/parts/controls.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/header.css" afterPath="$PROJECT_DIR$/css/parts/header.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/header.less" afterPath="$PROJECT_DIR$/css/parts/header.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/jquery.arcticmodal-0.3.css" afterPath="$PROJECT_DIR$/css/parts/jquery.arcticmodal-0.3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/layout.css" afterPath="$PROJECT_DIR$/css/parts/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/layout.less" afterPath="$PROJECT_DIR$/css/parts/layout.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/menu.css" afterPath="$PROJECT_DIR$/css/parts/menu.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/menu.less" afterPath="$PROJECT_DIR$/css/parts/menu.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/modal.css" afterPath="$PROJECT_DIR$/css/parts/modal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/modal.less" afterPath="$PROJECT_DIR$/css/parts/modal.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/owl.theme.default.min.css" afterPath="$PROJECT_DIR$/css/parts/owl.theme.default.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/slider.css" afterPath="$PROJECT_DIR$/css/parts/slider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/slider.less" afterPath="$PROJECT_DIR$/css/parts/slider.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/svg/icon-catalogue.svg" afterPath="$PROJECT_DIR$/images/svg/icon-catalogue.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/svg/icon-closer.svg" afterPath="$PROJECT_DIR$/images/svg/icon-closer.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/svg/icon-menu.svg" afterPath="$PROJECT_DIR$/images/svg/icon-menu.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-b.html" afterPath="$PROJECT_DIR$/index-b.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/swiper.min.css" afterPath="$PROJECT_DIR$/css/parts/swiper.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parts/variables.css" afterPath="$PROJECT_DIR$/css/parts/variables.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/widgets.js" afterPath="$PROJECT_DIR$/js/widgets.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,21 +38,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1380">
+              <caret line="129" column="22" lean-forward="false" selection-start-line="129" selection-start-column="18" selection-end-line="129" selection-end-column="22" />
+              <folding>
+                <element signature="e#61#111#0" expanded="false" />
+                <element signature="e#495#561#0" expanded="false" />
+                <element signature="e#1071#2555#0" expanded="false" />
+                <element signature="e#2582#3039#0" expanded="false" />
+                <element signature="e#4002#8104#0" expanded="false" />
+                <element signature="e#4156#4315#0" expanded="false" />
+                <element signature="e#4342#4612#0" expanded="false" />
+                <element signature="e#4645#4784#0" expanded="false" />
+                <element signature="e#4818#5668#0" expanded="false" />
+                <element signature="e#5701#6604#0" expanded="false" />
+                <element signature="e#6637#7022#0" expanded="false" />
+                <element signature="e#7059#7475#0" expanded="false" />
+                <element signature="e#7506#7608#0" expanded="false" />
+                <element signature="e#7639#7805#0" expanded="false" />
+                <element signature="e#8147#8973#0" expanded="false" />
+                <element signature="e#8201#8275#0" expanded="false" />
+                <element signature="e#9015#9689#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="widgets.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/widgets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="136" column="2" lean-forward="false" selection-start-line="136" selection-start-column="2" selection-end-line="136" selection-end-column="2" />
+            <state relative-caret-position="343">
+              <caret line="234" column="30" lean-forward="true" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
               <folding>
-                <element signature="n#!!block;n#wInitCarousel#0" expanded="false" />
                 <element signature="n#!!block;n#dotsLeftPosition#0;n#!!block;n#wInitCarousel#0" expanded="false" />
                 <element signature="n#!!block;n#debounce#0;n#!!block;n#wInitCarousel#0" expanded="false" />
                 <element signature="n#!!block;n#scroll#0;n#!!block;n#wInitCarousel#0" expanded="false" />
-                <element signature="n#!!block;n#hFormatPrice#0" expanded="false" />
-                <element signature="n#!!block;n#aHoverSvg#0" expanded="false" />
-                <element signature="n#!!block;n#WSexyInput#0" expanded="false" />
-                <element signature="e#4320#4650#0" expanded="false" />
+                <element signature="e#7542#8521#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/parts/layout.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="78" column="16" lean-forward="true" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,8 +94,8 @@
       <file leaf-file-name="slider.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/parts/slider.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="251">
+              <caret line="275" column="24" lean-forward="true" selection-start-line="275" selection-start-column="24" selection-end-line="275" selection-end-column="24" />
               <folding>
                 <element signature="e#201#673#0" expanded="false" />
                 <element signature="e#691#1063#0" expanded="false" />
@@ -67,43 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/parts/header.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/parts/all.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="57" column="3" lean-forward="true" selection-start-line="50" selection-start-column="2" selection-end-line="57" selection-end-column="3" />
-              <folding>
-                <element signature="e#573#638#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.less" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/parts/menu.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="controls.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/parts/controls.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="757">
+              <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="200" selection-end-column="1" />
               <folding>
                 <element signature="e#602#633#0" expanded="false" />
                 <element signature="e#2278#2657#0" expanded="false" />
@@ -112,57 +120,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index-b.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index-b.html">
+      <file leaf-file-name="header.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/parts/header.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="136" column="29" lean-forward="false" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
-              <folding>
-                <element signature="n#a#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#button#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="owl.carousel.min.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/parts/owl.carousel.min.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state relative-caret-position="159">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
+      <file leaf-file-name="menu.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/parts/menu.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="145" column="53" lean-forward="false" selection-start-line="145" selection-start-column="53" selection-end-line="145" selection-end-column="53" />
+            <state relative-caret-position="21">
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/parts/all.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
               <folding>
-                <element signature="e#61#111#0" expanded="false" />
-                <element signature="e#495#561#0" expanded="false" />
-                <element signature="e#1071#2555#0" expanded="false" />
-                <element signature="e#2582#3039#0" expanded="false" />
-                <element signature="e#4156#4315#0" expanded="false" />
-                <element signature="e#4342#4612#0" expanded="false" />
-                <element signature="e#4818#5668#0" expanded="false" />
-                <element signature="e#6637#7022#0" expanded="false" />
-                <element signature="e#7059#7475#0" expanded="false" />
-                <element signature="e#8201#8275#0" expanded="false" />
-                <element signature="e#9015#9689#0" expanded="false" />
+                <element signature="e#573#638#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modal.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/parts/modal.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,7 +176,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ease</find>
       <find>body</find>
       <find>data-c</find>
       <find>handle</find>
@@ -211,6 +205,7 @@
       <find>wI</find>
       <find>trigger</find>
       <find>min-w</find>
+      <find>form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -227,7 +222,6 @@
         <option value="$PROJECT_DIR$/css/less/owl.carousel.min.less" />
         <option value="$PROJECT_DIR$/css/less/owl.theme.default.min.less" />
         <option value="$PROJECT_DIR$/css/less/jquery.arcticmodal-0.3.less" />
-        <option value="$PROJECT_DIR$/css/parts/animate.less" />
         <option value="$PROJECT_DIR$/css/parts/swiper.min.less" />
         <option value="$PROJECT_DIR$/css/parts/variables.less" />
         <option value="$PROJECT_DIR$/css/parts/owl.carousel.min.css" />
@@ -243,20 +237,21 @@
         <option value="$PROJECT_DIR$/js/helpers.js" />
         <option value="$PROJECT_DIR$/js/demodata.js" />
         <option value="$PROJECT_DIR$/images/svg/marker.svg" />
-        <option value="$PROJECT_DIR$/css/parts/modal.less" />
         <option value="$PROJECT_DIR$/css/main-b.less" />
         <option value="$PROJECT_DIR$/css/parts/text.less" />
-        <option value="$PROJECT_DIR$/css/parts/layout.less" />
         <option value="$PROJECT_DIR$/js/functions.js" />
-        <option value="$PROJECT_DIR$/css/parts/owl.carousel.min.less" />
-        <option value="$PROJECT_DIR$/css/parts/header.less" />
         <option value="$PROJECT_DIR$/css/parts/all.css" />
-        <option value="$PROJECT_DIR$/css/parts/all.less" />
-        <option value="$PROJECT_DIR$/js/widgets.js" />
-        <option value="$PROJECT_DIR$/css/parts/slider.less" />
-        <option value="$PROJECT_DIR$/css/parts/controls.less" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index-b.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/css/parts/owl.carousel.min.less" />
+        <option value="$PROJECT_DIR$/css/parts/animate.less" />
+        <option value="$PROJECT_DIR$/js/widgets.js" />
+        <option value="$PROJECT_DIR$/css/parts/modal.less" />
+        <option value="$PROJECT_DIR$/css/parts/controls.less" />
+        <option value="$PROJECT_DIR$/css/parts/header.less" />
+        <option value="$PROJECT_DIR$/css/parts/slider.less" />
+        <option value="$PROJECT_DIR$/css/parts/all.less" />
+        <option value="$PROJECT_DIR$/css/parts/layout.less" />
         <option value="$PROJECT_DIR$/css/parts/menu.less" />
       </list>
     </option>
@@ -276,9 +271,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1934" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -298,58 +293,46 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="my-iphone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-iphone" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iphones" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iphones" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="my-iphone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-iphone" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iphones" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iphones" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="my-iphone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-iphone" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="parts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="my-iphone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-iphone" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iphones" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iphones" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="parts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="all.less" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
-              <item name="my-iphone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-iphone" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="my-iphone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-iphone" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="svg" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="my-iphone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-iphone" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="iphones" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iphones" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="iphones" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iphones" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../gitlab/alfamonolit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -469,17 +452,18 @@
       <workItem from="1499916321584" duration="18132000" />
       <workItem from="1501046497667" duration="2029000" />
       <workItem from="1501048537877" duration="48465000" />
+      <workItem from="1502682379323" duration="5305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173898000" />
+    <option name="totallyTimeSpent" value="182517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18976545" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12686567" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -534,7 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="486" lean-forward="false" selection-start-line="15" selection-start-column="486" selection-end-line="15" selection-end-column="486" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,7 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="843">
           <caret line="121" column="1" lean-forward="false" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,14 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
           <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/parts/animate.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="115" column="15" lean-forward="false" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -675,7 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="743">
           <caret line="1894" column="68673" lean-forward="true" selection-start-line="1894" selection-start-column="68673" selection-end-line="1894" selection-end-column="68673" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -683,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -691,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,10 +693,6 @@
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#a#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -761,27 +728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/parts/modal.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/svg/marker.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/parts/layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -801,76 +751,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="94" column="45" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="94" selection-end-column="45" />
-          <folding>
-            <element signature="e#47#769#0" expanded="false" />
-            <element signature="e#802#1065#0" expanded="false" />
-            <element signature="e#1090#1255#0" expanded="false" />
-            <element signature="e#1349#1594#0" expanded="false" />
-            <element signature="e#2019#2396#0" expanded="false" />
-            <element signature="e#2453#2654#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/parts/all.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="730">
           <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/parts/header.less">
+    <entry file="file://$PROJECT_DIR$/index-b.html" />
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="69">
+          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/parts/all.less">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="57" column="3" lean-forward="true" selection-start-line="50" selection-start-column="2" selection-end-line="57" selection-end-column="3" />
+        <state relative-caret-position="1380">
+          <caret line="129" column="22" lean-forward="false" selection-start-line="129" selection-start-column="18" selection-end-line="129" selection-end-column="22" />
           <folding>
-            <element signature="e#573#638#0" expanded="false" />
+            <element signature="e#61#111#0" expanded="false" />
+            <element signature="e#495#561#0" expanded="false" />
+            <element signature="e#1071#2555#0" expanded="false" />
+            <element signature="e#2582#3039#0" expanded="false" />
+            <element signature="e#4002#8104#0" expanded="false" />
+            <element signature="e#4156#4315#0" expanded="false" />
+            <element signature="e#4342#4612#0" expanded="false" />
+            <element signature="e#4645#4784#0" expanded="false" />
+            <element signature="e#4818#5668#0" expanded="false" />
+            <element signature="e#5701#6604#0" expanded="false" />
+            <element signature="e#6637#7022#0" expanded="false" />
+            <element signature="e#7059#7475#0" expanded="false" />
+            <element signature="e#7506#7608#0" expanded="false" />
+            <element signature="e#7639#7805#0" expanded="false" />
+            <element signature="e#8147#8973#0" expanded="false" />
+            <element signature="e#8201#8275#0" expanded="false" />
+            <element signature="e#9015#9689#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/parts/animate.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="1609" column="3" lean-forward="true" selection-start-line="1609" selection-start-column="3" selection-end-line="1609" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/parts/owl.carousel.min.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        <state relative-caret-position="230">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/widgets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="136" column="2" lean-forward="false" selection-start-line="136" selection-start-column="2" selection-end-line="136" selection-end-column="2" />
+        <state relative-caret-position="343">
+          <caret line="234" column="30" lean-forward="true" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
           <folding>
-            <element signature="n#!!block;n#wInitCarousel#0" expanded="false" />
             <element signature="n#!!block;n#dotsLeftPosition#0;n#!!block;n#wInitCarousel#0" expanded="false" />
             <element signature="n#!!block;n#debounce#0;n#!!block;n#wInitCarousel#0" expanded="false" />
             <element signature="n#!!block;n#scroll#0;n#!!block;n#wInitCarousel#0" expanded="false" />
-            <element signature="n#!!block;n#hFormatPrice#0" expanded="false" />
-            <element signature="n#!!block;n#aHoverSvg#0" expanded="false" />
-            <element signature="n#!!block;n#WSexyInput#0" expanded="false" />
-            <element signature="e#4320#4650#0" expanded="false" />
+            <element signature="e#7542#8521#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/parts/modal.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/parts/controls.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="757">
+          <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="200" selection-end-column="1" />
           <folding>
             <element signature="e#602#633#0" expanded="false" />
             <element signature="e#2278#2657#0" expanded="false" />
@@ -878,51 +840,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/css/parts/header.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="145" column="53" lean-forward="false" selection-start-line="145" selection-start-column="53" selection-end-line="145" selection-end-column="53" />
-          <folding>
-            <element signature="e#61#111#0" expanded="false" />
-            <element signature="e#495#561#0" expanded="false" />
-            <element signature="e#1071#2555#0" expanded="false" />
-            <element signature="e#2582#3039#0" expanded="false" />
-            <element signature="e#4156#4315#0" expanded="false" />
-            <element signature="e#4342#4612#0" expanded="false" />
-            <element signature="e#4818#5668#0" expanded="false" />
-            <element signature="e#6637#7022#0" expanded="false" />
-            <element signature="e#7059#7475#0" expanded="false" />
-            <element signature="e#8201#8275#0" expanded="false" />
-            <element signature="e#9015#9689#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-b.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="136" column="29" lean-forward="false" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
-          <folding>
-            <element signature="n#a#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#button#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="159">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/parts/slider.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        <state relative-caret-position="251">
+          <caret line="275" column="24" lean-forward="true" selection-start-line="275" selection-start-column="24" selection-end-line="275" selection-end-column="24" />
           <folding>
             <element signature="e#201#673#0" expanded="false" />
             <element signature="e#691#1063#0" expanded="false" />
@@ -933,10 +862,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/parts/all.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+          <folding>
+            <element signature="e#573#638#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/parts/layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="78" column="16" lean-forward="true" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/parts/menu.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+        <state relative-caret-position="21">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding />
         </state>
       </provider>

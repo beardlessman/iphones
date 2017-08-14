@@ -42,7 +42,9 @@ function wInitCarousel() {
         URLhashListener:true,
         startPosition: 'URLHash',
         mouseDrag: true,
-        smartSpeed: 400
+        smartSpeed: 600,
+        animateOut: 'fadeOutLeft',
+        animateIn: 'fadeInRight'
     });
     // $('.owl-item').css({'opacity':'0'});
     // setTimeout(function () {
@@ -64,13 +66,13 @@ function wInitCarousel() {
     owl.on('translated.owl.carousel', function(event) {
         var color = $('.owl-item.active').find('.j-color__var.active').data('val');
         $('body').css({'background-color':color});
-        $('.owl-item.active').css({'opacity':'1'});
+        // $('.owl-item.active').css({'opacity':'1'});
     });
     owl.on('translate.owl.carousel', function(event) {
         // $('.owl-item:not(.active) .a-top').removeClass('_animate');
         //
         // dotsLeftPosition();
-        $('.owl-item').css({'opacity':'0'});
+        // $('.owl-item').css({'opacity':'0'});
 
     });
     owl.on('mousewheel', '.owl-stage', f100);
@@ -106,10 +108,10 @@ function aHoverSvg() {
     [].slice.call ( document.querySelectorAll( '.j-svg-hover-menu' ) ).forEach( function( el ) {
         var s = Snap( el.querySelector( 'svg' ) ),
             line1 = s.select( '.j-svg-hover__el1' ),
-        	lineConfig1 = {
-        		from : line1.attr( 'x2' ),
-        		to : line1.node.dataset.hover
-        	},
+            lineConfig1 = {
+                from : line1.attr( 'x2' ),
+                to : line1.node.dataset.hover
+            },
             line2 = s.select( '.j-svg-hover__el2' ),
             lineConfig2 = {
                 from : line2.attr( 'x2' ),
@@ -148,11 +150,146 @@ WSexyInput.prototype.init = function () {
         cmp.field.addClass('isFocused');
     });
     cmp.input.on('blur', function () {
-        console.log(cmp.input.val());
         if (cmp.input.val()) {
             return false;
         } else {
             cmp.field.removeClass('isFocused');
         }
     });
+};
+
+function formCallbackSuccess() {
+    $.arcticmodal('close');
+
+    $('.call-order-success').arcticmodal();
+}
+function formCallbackFail() {
+    $.arcticmodal('close');
+
+    $('.call-order-fail').arcticmodal();
+}
+function Form(form, callbackSuccess, callbackFail) {
+    this.form = $(form);
+    this.sendBtn = '.j-form__send'; // можно избавиться от классов
+    this.sendBtnFake = this.form.find('.j-form__send--fake');
+    this.input = this.form.find('.j-form__input');
+    this.radio = this.form.find('.j-form__input[type="radio"]');
+    this.inputV = this.form.find('.j-form__input:visible'); // можно избавиться от классов
+    this.url = this.form.attr('action');
+    this.type = this.form.attr('method');
+    this.undisabler = this.form.find('.j-form__undisabler');
+
+    if (callbackSuccess && typeof callbackSuccess == 'function') {
+        this.callbackSuccess = callbackSuccess;
+    }
+    if (callbackFail && typeof callbackFail == 'function') {
+        this.callbackFail = callbackFail;
+    }
+
+    this.init();
+};
+
+Form.prototype.init = function(){
+    var cmp = this;
+
+    $(".mask-phone").mask("+7(000)-000-0000");
+
+    cmp.form.on('submit', function (e) {
+        e.preventDefault();
+        if (cmp.sendBtnFake.is(':visible')) {
+            console.log('нет галки!');
+            cmp.undisabler.addClass('error');
+            return false;
+        } else {
+            cmp.inputV = cmp.form.find('.j-form__input:visible');
+            cmp.validate();
+            return false;
+        }
+    });
+    cmp.input.on('input', function () {
+        $(this).removeClass('error');
+    });
+    cmp.undisabler.on('change', function () {
+        if ($(this).is(':checked')) {
+            $(this).removeClass('error');
+            $(cmp.sendBtn).removeAttr('disabled');
+            $(cmp.sendBtnFake).hide();
+        } else {
+            $(cmp.sendBtn).attr('disabled', 'disabled');
+            $(cmp.sendBtnFake).show();
+        }
+    });
+    cmp.radio.on('change', function () {
+        $('.j-error-radio').hide();
+        $('.j-radio-label').removeClass('error');
+    });
+};
+Form.prototype.validate = function () {
+
+    console.log('validate');
+
+    var cmp = this,
+        form = cmp.form,
+        phone = form.find('[name="fd[phone]"]'),
+        required = form.find('[required]:visible'),
+        max = required.length,
+        errors = 0;
+
+    for (var i = 0; i < max; i++){
+        if ($(required[i]).val().length < 1) {
+            console.log('error');
+            $(required[i]).addClass('error');
+            errors += 1;
+        }
+    }
+
+    if (phone.val().length < 16) { // дополнительное, корявое условия для телефона +7(000)-000-0000
+        phone.addClass('error');
+        errors += 1;
+    }
+
+    console.log('errors:' + errors);
+    if (errors == 0 ) {
+        cmp.send();
+    }
+};
+Form.prototype.send = function () {
+    var cmp = this;
+
+    console.log('send');
+
+    if (cmp.form.hasClass('_noAjax')) {
+        // cmp.form.submit();
+    }
+    else {
+        var inputs = cmp.input,
+            inputsL = inputs.length,
+            data = {
+                '_csrf': $('meta[name="csrf-token"]').attr("content") // используется для секьюрности, согласовать с бэкендом
+            };
+
+        for (var i = 0; i < inputsL; i++) {
+            data[''+$(inputs[i]).attr("name")+''] = $(inputs[i]).val();
+        }
+
+        console.log(data);
+
+        $.ajax({
+            type: cmp.type,
+            data: data,
+            url: cmp.url,
+            success: function(data) {
+                console.log('success');
+                // callback
+                formCallbackSuccess();
+
+                cmp.input.val('');
+            },
+            error: function(){
+                console.log('fail');
+                // callback
+                formCallbackFail();
+            }
+        });
+    }
 };

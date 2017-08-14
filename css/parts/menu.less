@@ -37,6 +37,7 @@
 .menu__list {
   list-style-type: none;
   text-align: right;
+  padding: 0;
 }
 .menu__link {
   cursor: pointer;
@@ -68,5 +69,33 @@
     &:before {
       width: 50px;
     }
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    padding: 100px 100px 20px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu__link {
+    font-size: 40px;
+  }
+  .menu {
+    padding: 100px 50px 20px 20px;
+  }
+  .menu__close {
+    right: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu {
+    padding: 100px 30px 20px 20px;
+  }
+  .menu__close {
+    right: 20px;
+    top: 27px;
+  }
+  .menu__link {
+    font-size: 34px;
   }
 }
